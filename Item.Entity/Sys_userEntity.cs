@@ -21,10 +21,8 @@ namespace DataEntity
 		/// <summary>
 		/// 
 		/// </summary>	
-		[Key] 
-		 
-		 
-		[Display(Name = "")]
+	
+		[Display(Name = "用户编码")]
 		 
 		public string UserCode { get; set; }
 				
@@ -34,7 +32,7 @@ namespace DataEntity
 		 
 		 
 		[StringLength(10)] 
-		[Display(Name = "")]
+		[Display(Name = "用户")]
 		 
 		public string UserSeq { get; set; }
 				
@@ -44,7 +42,7 @@ namespace DataEntity
 		 
 		 
 		[StringLength(200)] 
-		[Display(Name = "")]
+		[Display(Name = "用户名")]
 		 
 		public string UserName { get; set; }
 				
@@ -54,7 +52,7 @@ namespace DataEntity
 		 
 		 
 		[StringLength(2048)] 
-		[Display(Name = "")]
+		[Display(Name = "描述")]
 		 
 		public string Description { get; set; }
 				
@@ -64,7 +62,7 @@ namespace DataEntity
 		 
 		 
 		[StringLength(40)] 
-		[Display(Name = "")]
+		[Display(Name = "用户密码")]
 		 
 		public string Password { get; set; }
 				
@@ -74,7 +72,7 @@ namespace DataEntity
 		 
 		 
 		[StringLength(1000)] 
-		[Display(Name = "")]
+		[Display(Name = "角色名")]
 		 
 		public string RoleName { get; set; }
 				
@@ -84,7 +82,7 @@ namespace DataEntity
 		 
 		 
 		[StringLength(1000)] 
-		[Display(Name = "")]
+		[Display(Name = "组织名称")]
 		 
 		public string OrganizeName { get; set; }
 				
@@ -94,7 +92,7 @@ namespace DataEntity
 		 
 		 
 		[StringLength(4000)] 
-		[Display(Name = "")]
+		[Display(Name = "配置")]
 		 
 		public string ConfigJSON { get; set; }
 				
@@ -104,7 +102,7 @@ namespace DataEntity
 		 
 		 
 		 
-		[Display(Name = "")]
+		[Display(Name = "是否可用")]
 		 
 		public bool IsEnable { get; set; }
 				
@@ -114,7 +112,7 @@ namespace DataEntity
 		 
 		 
 		 
-		[Display(Name = "")]
+		[Display(Name = "登录次数")]
 		 
 		public int LoginCount { get; set; }
 				
@@ -124,7 +122,7 @@ namespace DataEntity
 		 
 		 
 		 
-		[Display(Name = "")]
+		[Display(Name = "最近登录时间")]
 		[DataType(DataType.DateTime)] 
 		public DateTime LastLoginDate { get; set; }
 				
@@ -134,7 +132,7 @@ namespace DataEntity
 		 
 		 
 		[StringLength(20)] 
-		[Display(Name = "")]
+		[Display(Name = "创建人")]
 		 
 		public string CreatePerson { get; set; }
 				
@@ -144,7 +142,7 @@ namespace DataEntity
 		 
 		 
 		 
-		[Display(Name = "")]
+		[Display(Name = "创建时间")]
 		[DataType(DataType.DateTime)] 
 		public DateTime CreateDate { get; set; }
 				
@@ -154,7 +152,7 @@ namespace DataEntity
 		 
 		 
 		[StringLength(20)] 
-		[Display(Name = "")]
+		[Display(Name = "更新人")]
 		 
 		public string UpdatePerson { get; set; }
 				
@@ -164,17 +162,17 @@ namespace DataEntity
 		 
 		 
 		 
-		[Display(Name = "")]
+		[Display(Name = "更新时间")]
 		[DataType(DataType.DateTime)] 
 		public DateTime UpdateDate { get; set; }
-				
-		/// <summary>
-		/// 
-		/// </summary>	
+
+        /// <summary>
+        /// 
+        /// </summary>	
+        [Key]
+        [Required] 
 		 
-		[Required] 
-		 
-		[Display(Name = "")]
+		[Display(Name = "用户ID")]
 		 
 		public long SysUserID { get; set; }
 		 

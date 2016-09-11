@@ -18,6 +18,11 @@ namespace ItemM.Web
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+            routes.MapRoute(
+       name: "User",
+       url: "User/{action}/{id}",
+       defaults: new { controller = "User", action = "Index", id = UrlParameter.Optional }
+   );
         }
     }
 }
